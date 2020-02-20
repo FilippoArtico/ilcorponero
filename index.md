@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="icon" type="image/gif" href="images/favicon.gif">
+  <title>Il Corpo Nero</title>
+  <script type="text/javascript" src="https://www.hostmath.com/Math/MathJax.js?config=OK"></script>
+</head>
+
+<body>
+  <div id="navbar">
+    <header>
+      <a href="index.html" class="logo-link">
+        IL CORPO NERO
+      </a>
+
+      <div class="topnav">
+        <h3><a href="pages/energiairr.html" class="inactive">Energia Irraggiata</a></h3>
+        <h3><a href="pages/modellocn.html" class="inactive">Modello di corpo nero</a></h3>
+        <h3><a href="pages/termal.html" class="inactive">Termalizzazione</a></h3>
+        <h3><a href="pages/calcoloen.html" class="inactive">Calcolo dell'energia</a></h3>
+        <h3><a href="pages/casilim.html" class="inactive">Casi limite</a></h3>
+      </div>
+    </header>
+  </div>
+
+  <main>
+    <h3>Il Corpo Nero</h3>
+    <hr class="divider">
+    <h4>I corpi caldi emettono radiazione</h4>
+    <div class="paragraph">
+      <p>I fisici alla fine del secolo scorso si trovarono di fronte a un problema significativo: studiare il modo in cui i
+        corpi caldi emettono radiazioni. Si sapeva come funzionava il meccanismo a grandi linee - si sapeva cioè che
+        il calore causava la vibrazione delle molecole e degli atomi di un solido, ed era noto pure che le parti più
+        piccole della materia erano esse stesse complessi sistemi di cariche elettriche. Le convinzioni di Maxwell sul
+        fatto che le cariche in moto emettessero radiazioni elettromagnetiche erano state confermate dagli
+        esperimenti di Hertz e altri fisici. Altresì, era noto dalle equazioni di Maxwell che tale radiazione viaggiava
+        alla velocità della luce e da ciò si dedusse che la luce stessa - e le radiazioni infrarosse ad essa connesse -
+        erano in realtà onde elettromagnetiche. La questione era, quindi, che quando un corpo veniva riscaldato, le
+        vibrazioni causate a livello atomico avrebbero implicato il movimento delle cariche. Se si assumeva che la
+        teoria di Maxwell - perfettamente funzionante nel mondo macroscopico - fosse valida anche su scala
+        microscopica, allora tali cariche oscillanti avrebbero dovuto emettere radiazioni, presumibilmente
+        sviluppando calore e luce.</p>
+    </div>
+  </main>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
