@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="icon" type="image/gif" href="../images/favicon.gif">
+  <title>Il Corpo Nero</title>
+  <script type="text/javascript" src="https://www.hostmath.com/Math/MathJax.js?config=OK"></script>
+</head>
+
+<body>
+  <div id="navbar">
+    <header>
+      <a href="../index.html" class="logo-link">
+        IL CORPO NERO
+      </a>
+
+      <div class="topnav">
+        <h3><a href="energiairr.html" class="inactive">Energia Irraggiata</a></h3>
+        <h3><a href="modellocn.html" class="inactive">Modello di corpo nero</a></h3>
+        <h3><a href="termal.html" class="active">Termalizzazione</a></h3>
+        <h3><a href="calcoloen.html" class="inactive">Calcolo dell'energia</a></h3>
+        <h3><a href="casilim.html" class="inactive">Casi limite</a></h3>
+      </div>
+
+      <div class="tab">
+        <button class="tablinks" onclick="openTopic(event, 'Termal')" id="defaultOpen">Termalizzazione</button>
+        <button class="tablinks" onclick="openTopic(event, 'IntClass')">Interpretazione classica</button>
+        <button class="tablinks" onclick="openTopic(event, 'IntQuant')">Interpretazione quantistica</button>
+      </div>
+    </header>
+  </div>
+
+  <main>
+    <div id="Termal" class="tabcontent">
+      <h3>La termalizzazione</h3>
+      <hr class="divider">
+      <div class="paragraph">
+        <p>Abbiamo già detto che un corpo nero termalizza l'energia al suo interno, ovvero la digerisce grazie a una
+          serie di urti non perfettamente elastici. Ci sono due differenti interpretazioni del modo in cui un corpo nero
+          assorba e termalizzi la radiazione che penetra al suo interno.
+        </p>
+      </div>
+    </div>
+
+    <div id="IntClass" class="tabcontent">
+      <h3>Interpretazione classica</h3>
+      <hr class="divider">
+      <div class="paragraph">
+        <p>In questo caso si considerano esclusivamente le pareti interne della cavità, come se fossero composte
+          da oscillatori armonici quali gli atomi di Thomson; le onde incidenti sono tradotte per risonanza in
+          oscillazioni. Poiché gli atomi di Thomson possiedono un coefficiente di smorzamento, l'onda viene
+          riflessa finché non perde memoria di sé. Quando la radiazione è stata digerita, ci troviamo di fronte ad
+          un equilibrio termico all'interno della cavità.<br>
+          Secondo questa prima interpretazione, l'energia <span style="font-family: Times New Roman, serif; font-size: 20px">dE</span> interna è facilmente descritta dalla seguente
+          equazione:</p>
+        \[\large dE=V\cdot u\left ( \nu \right )\cdot d\nu\]
+        <p>Dove <span style="font-family: Times New Roman, serif; font-size: 20px">V</span> è il volume della cavità. È anche vero che, se vi sono <span style="font-family: Times New Roman, serif; font-size: 20px">dN(&#120584;)</span> oscillatori
+          sulle pareti, l'energia <span style="font-family: Times New Roman, serif; font-size: 20px">dE</span> è
+          data dal prodotto tra l'energia media di ciascun oscillatore per <span style="font-family: Times New Roman, serif; font-size: 20px">dN(&#120584;)</span>:</p>
+        \[\large dE=\:&lt;\!E\!&gt;_{media}\cdot \:dN\left ( \nu \right )\]
+      </div>
+    </div>
+
+    <div id="IntQuant" class="tabcontent">
+      <h3>Interpretazione quantistica</h3>
+      <hr class="divider">
+      <div class="paragraph">
+        <p>Basandoci sulle teorie quantistiche dobbiamo considerare tutto il volume interno della cavità come un
+          insieme di oscillatori - i fotoni - che trasmettono l'energia per pacchetti definiti (i quanti, appunto).<br>
+          Nell'interpretazione classica si consideravano degli oscillatori materiali (gli atomi di Thomson), mentre
+          in fisica quantistica si opera una scomposizione della radiazione stessa.<br>
+          L'energia nella cavità sarà, come per il metodo classico, espressa dalla formula:</p>
+        \[\large dE=\:&lt;\!E_{media}\!&gt;\cdot \:dN\left ( \nu \right )\]
+        <p>Ora, tuttavia, si procederà in modo diverso per calcolare il numero degli oscillatori relativi alla
+          frequenza <span style="font-family: Times New Roman, serif; font-size: 20px">&#120584; + &#916;&#120584;</span>. Dal punto di vista statistico è opportuno sottolineare il fatto che, per frequenze
+          molto piccole, vi saranno pochissime radiazioni in risonanza. Ciò è ben evidente dalla seguente
+          equazione, che esprime il numero di frequenze <span style="font-family: Times New Roman, serif; font-size: 20px">n(&#120584;)</span> che risuonano attorno a una frequenza incidente <span
+            style="font-family: Times New Roman, serif; font-size: 20px">&#120584;</span>:</p>
+        \[\large n\left ( \nu \right )=\frac{8\pi V\nu ^{2}}{c^{3}}\]
+        <p>Ora, moltiplicando <span style="font-family: Times New Roman, serif; font-size: 20px">n(&#120584;)</span> per l'energia media di ciascuna frequenza in risonanza e dividendo infine per il
+          volume (noi cerchiamo infatti la densità di energia), otteniamo:</p>
+        \[\large u\left ( \nu \right )=\frac{8\pi \nu ^{2}}{c^{3}}\cdot \:&lt;\!E_{media}\!&gt;\]
+        <p>Quest'ultima può essere considerata un'espressione universale, poiché può essere utilizzata sia in
+          meccanica classica che quantistica.</p>
+      </div>
+    </div>
+  </main>
+
+  <script type="text/javascript" src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="icon" type="image/gif" href="../images/favicon.gif">
+  <title>Il Corpo Nero</title>
+  <script type="text/javascript" src="https://www.hostmath.com/Math/MathJax.js?config=OK"></script>
+</head>
+
+<body>
+  <div id="navbar">
+    <header>
+      <a href="../index.html" class="logo-link">
+        IL CORPO NERO
+      </a>
+
+      <div class="topnav">
+        <h3><a href="energiairr.html">Energia Irraggiata</a></h3>
+        <h3><a href="modellocn.html" class="active">Modello di corpo nero</a></h3>
+        <h3><a href="termal.html">Termalizzazione</a></h3>
+        <h3><a href="calcoloen.html">Calcolo dell'energia</a></h3>
+        <h3><a href="casilim.html">Casi limite</a></h3>
+      </div>
+
+      <div class="tab">
+        <button class="tablinks" onclick="openTopic(event, 'CorpoNero')" id="defaultOpen">Modello di corpo nero</button>
+        <button class="tablinks" onclick="openTopic(event, 'StefanBoltzmann')">Legge di Stefan-Boltzmann</button>
+        <button class="tablinks" onclick="openTopic(event, 'Wien')">Legge di Wien</button>
+      </div>
+    </header>
+  </div>
+
+  <main>
+    <div id="CorpoNero" class="tabcontent">
+      <h3>Modello di corpo nero</h3>
+      <hr class="divider">
+      <img src="../images/img1.gif" alt="CorpoNero" style="float: right; padding: 0 30px;">
+      <div class="paragraph">
+        <p style="padding-right: 0">Per poter meglio studiare il potere emissivo di un corpo è stato necessario costruire un modello che
+          riproducesse con buona approssimazione le caratteristiche di un corpo nero ideale.<br>
+          A tale scopo si è considerata una cavità rivestita internamente di nerofumo, materiale assorbente; tale
+          cavità possiede un piccolissimo foro su una parete, di dimensioni trascurabili rispetto a quelle della cavità.<br><br>
+          Tale configurazione permette alla cavità stessa di digerire l'eventuale radiazione che penetra dal foro, con
+          possibilità praticamente nulle che il raggio entrato riesca ad uscire.<br>
+          In realtà dobbiamo sottolineare che il corpo emette radiazione dopo la termalizzazione. Tuttavia
+          l'emissione è di natura completamente diversa rispetto alla radiazione che incideva inizialmente.<br>
+          L' emissione di corpo nero, infatti, dipende esclusivamente dalla temperatura efficace del corpo stesso.<br><br>
+          Per i fisici di fine secolo fu naturale pensare alla cavità sopracitata come costituita da atomi di <b>Thomson</b>.
+          Questi, per un effetto di risonanza - efficace solo ad alcune frequenze - sono in grado di contribuire alla
+          termalizzazione della radiazione.<br>
+          Per coprire tutte le frequenze, così come deve appunto fare un corpo nero, è necessario associare un
+          numero altissimo di atomi - intesi come <i>oscillatori armonici</i> - in modo che dal loro accoppiamento si formi
+          un sistema di termalizzazione più efficace.
+        </p>
+      </div>
+    </div>
+
+    <div id="StefanBoltzmann" class="tabcontent">
+      <h3>Legge di Stefan-Boltzmann</h3>
+      <hr class="divider">
+      <div class="paragraph">
+        <p>Studiando l'emissione dei corpi i fisici <b>Stefan</b> e <b>Boltzmann</b> riuscirono ad estrapolare sperimentalmente
+          una semplice funzione in grado di esprimere la potenza emessa per unità di superficie da un corpo
+          nero.<br><br>
+          La densità di energia nella cavità dopo la termalizzazione sarà una sommatoria - integrale - di energie
+          relative ad una determinata frequenza <span style="font-family: Times New Roman, serif; font-size: 20px">&#120584;</span> e temperatura <span style="font-family: Times New Roman, serif; font-size: 20px">T</span>.
+        </p>
+        \[\large U=\int_0^{+\infty}u\left ( \mathrm{\nu ,T} \right )\cdot d\nu \rightarrow U=U\left ( \mathrm{T}\right )\]
+        <p>Da cui si deduce che la densità di energia è in funzione della sola temperatura.
+          La legge di Stefan, sull'energia totale emessa da un corpo nero nell'unità di tempo, afferma appunto che
+          tale potenza è proporzionale a <span style="font-family: Times New Roman, serif; font-size: 20px">T<sup>4</sup></span>, con costante di proporzionalità <span style="font-family: Times New Roman, serif; font-size: 20px">&sigma;</span>,
+          detta
+          costante di Stefan-Boltzmann.</p>
+        \[\large E=\sigma \cdot \mathrm{T^{4}}\]
+        \[\large \sigma =5.67\cdot 10^{-8}\frac{W}{m^{2}K^{4}}\]
+      </div>
+    </div>
+
+    <div id="Wien" class="tabcontent">
+      <h3>Legge di Wien</h3>
+      <hr class="divider">
+      <div class="paragraph">
+        <p>Wien si occupò di come avveniva l'equilibrio termico tra la radiazione incidente e l'interno della cavità.
+          Egli considerò le pareti interne come specchi ideali, incapaci di riflettere completamente la radiazione.
+          Ciò che il fisico ipotizzava era quindi un urto non perfettamente elastico.<br>
+          Dopo calcoli complessi, Wien giunse alla formulazione della legge omonima:</p>
+        \[\large u(\nu)=\nu^{3}\cdot F\left ( \frac{\nu }{\mathrm{T}} \right )\]
+        <p>A tale legge segue quella dello spostamento di Wien. Essa afferma che esiste una particolare relazione
+          tra la temperatura assoluta <span style="font-family: Times New Roman, serif; font-size: 20px">T</span> di un corpo nero e la lunghezza d'onda <span style="font-family: Times New Roman, serif; font-size: 20px">&#955;<sub>max</sub></span>
+          per la quale si ha l'emissione più intensa. Tale relazione è riassunta nell'equazione:</p>
+        \[\large \mathrm{ \lambda_{max} T=K}\]
+        <p>È evidente che, essendo temperatura e lunghezza d'onda inversamente proporzionali, all'aumentare di
+          <span style="font-family: Times New Roman, serif; font-size: 20px">T</span> noteremo che diminuisce la lunghezza d'onda alla quale il corpo emette prevalentemente. Ovvero,
+          aumenta la frequenza di emissione massima.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <a href="#navbar">Torna in alto</a>
+  </footer>
+
+  <script type="text/javascript" src="../js/main.js"></script>
+</body>
+
+</html>
