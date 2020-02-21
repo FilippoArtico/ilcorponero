@@ -389,4 +389,8 @@ footer a:active::after {
   main {
     padding: 10px;
   }
+
+  main p {
+    padding: 0 5%;
+  }
 }
