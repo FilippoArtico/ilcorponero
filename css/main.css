@@ -383,5 +383,6 @@ footer a:active::after {
 @media only screen and (max-width: 600px) {
   .topnav a, .tab button {
     float: none;
+    width: 100%;
   }
 }
