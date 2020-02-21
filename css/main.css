@@ -337,9 +337,11 @@ main p {
 
 footer {
   background-color: #ddd;
+  position: sticky;
   width: 100%;
   padding: 20px;
-  margin-top: 20px;
+  margin-top: 30px;
+  top: 100vh;
   text-align: center;
 }
 
