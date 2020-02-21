@@ -345,7 +345,13 @@ footer {
   text-align: center;
 }
 
-footer a {
+.totop {
+  width: 145px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.totop a {
   position: relative;
   font-family: var(--ff-main);
   font-size: 20px;
@@ -353,31 +359,42 @@ footer a {
   text-decoration: none;
 }
 
-footer a::after {
+.totop a::after {
   content: "";
   position: absolute;
-  left: 0;
+  right: 0;
   bottom: 0;
-  width: 100%;
+  width: 110px;
   height: 2px;
   background-color: #ff6600;
   transform: scaleX(0);
   transition: transform 250ms ease-in;
 }
 
-footer a:hover {
+.totop span {
+  color: #ff6600;
+  opacity: 0;
+  padding: 5px;
+  transition: 0.4s;
+}
+
+.totop a:hover {
   color: #ff6600;
 }
 
-footer a:hover::after {
+.totop:hover span {
+  opacity: 1;
+}
+
+.totop a:hover::after {
   transform: scaleX(1);
 }
 
-footer a:active {
+.totop a:active {
   color: var(--clr-text-h);
 }
 
-footer a:active::after {
+.totop a:active::after {
   background-color: var(--clr-text-h);
   transition: none;
 }
