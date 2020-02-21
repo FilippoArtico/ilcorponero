@@ -379,3 +379,9 @@ footer a:active::after {
   background-color: var(--clr-text-h);
   transition: none;
 }
+
+@media only screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+  }
+}
