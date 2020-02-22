@@ -185,6 +185,11 @@ main p {
   text-align: justify;
 }
 
+.content-img {
+  float: right;
+  padding: 0 30px;
+}
+
 .centered-img {
   display: block;
   margin-left: auto;
@@ -411,5 +416,9 @@ footer {
 
   main p {
     padding: 0 5%;
+  }
+  
+  .content-img {
+    float: none;
   }
 }
