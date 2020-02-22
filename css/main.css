@@ -386,14 +386,14 @@ footer {
 }
 
 .totop span {
-  color: var(--clr-text-h);
+  color: black;
   opacity: 0;
   padding: 5px;
   transition: 0.4s;
 }
 
 .totop a:hover {
-  color: black;
+  color: #ff6600;
 }
 
 .totop:hover span {
