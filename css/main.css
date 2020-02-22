@@ -393,11 +393,11 @@ footer {
 }
 
 .totop a:hover {
-  color: #ff6600;
+  color: black;
 }
 
 .totop:hover span {
-  opacity: 1;
+  color: #ff6600;
 }
 
 .totop a:hover::after {
