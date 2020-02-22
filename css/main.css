@@ -452,7 +452,7 @@ footer {
     font-size: 1vh;
   }
 
-  .content {
+  .content, .modal{
     width: 1vw;
   }
 }
