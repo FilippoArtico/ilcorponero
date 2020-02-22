@@ -448,4 +448,8 @@ footer {
   .container, .content, .modal-content {
     width: 100%;
   }
+
+  #caption {
+    font-size: 3vh;
+  }
 }
