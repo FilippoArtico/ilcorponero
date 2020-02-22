@@ -238,6 +238,11 @@ main p {
   transition: none;
 }
 
+#img-apart {
+  padding: 3%;
+  display: inline-block;
+}
+
 #images {
   text-align: center;
 }
