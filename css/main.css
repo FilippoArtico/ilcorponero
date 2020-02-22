@@ -420,5 +420,7 @@ footer {
   
   .content-img {
     float: none;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
