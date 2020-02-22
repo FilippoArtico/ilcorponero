@@ -445,11 +445,15 @@ footer {
     display: none;
   }
 
-  .container, .content, .modal-content {
+  .container, .modal-content {
     width: 100%;
   }
 
   #caption {
     font-size: 1vh;
+  }
+
+  .content {
+    width: 1vh;
   }
 }
