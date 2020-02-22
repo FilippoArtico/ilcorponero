@@ -420,6 +420,7 @@ footer {
   
   .content-img {
     float: none;
+    display: block;
     margin-left: auto;
     margin-right: auto;
   }
