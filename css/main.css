@@ -434,4 +434,8 @@ footer {
     margin-right: auto;
     margin-bottom: 10px;
   }
+
+  img-apart {
+    padding: 0;
+    display: none;
 }
