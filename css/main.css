@@ -372,7 +372,7 @@ footer {
 }
 
 .totop span {
-  color: #ff6600;
+  color: var(--clr-text-h);
   opacity: 0;
   padding: 5px;
   transition: 0.4s;
