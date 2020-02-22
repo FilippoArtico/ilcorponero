@@ -443,4 +443,9 @@ footer {
   #img-apart {
     padding: 0;
     display: none;
+  }
+
+  .modal-content {
+    width: 100%;
+  }
 }
