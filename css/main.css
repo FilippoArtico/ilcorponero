@@ -445,7 +445,7 @@ footer {
     display: none;
   }
 
-  .container {
+  .container, .content, .modal-content {
     width: 100%;
   }
 }
