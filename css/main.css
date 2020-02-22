@@ -445,7 +445,7 @@ footer {
     display: none;
   }
 
-  .modal-content, #caption {
+  .content {
     width: 100%;
   }
 }
