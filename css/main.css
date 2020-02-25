@@ -5,7 +5,6 @@
   --ff-second: "Lato", sans-serif;
   --clr-text: darkorange;
   --clr-text-h: saddlebrown;
-  --clr-accent: navy;
 }
 
 *, *::before, *::after {
@@ -32,6 +31,22 @@ html, body {
 header {
   background-color: white;
   text-align: center;
+}
+
+.logo-img {
+  width: 50px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  opacity: 0;
+  transform: rotate(-360deg);
+  transition: opacity 0.5s ease-in, left 0.5s ease-in, transform 0.5s ease-in;
+}
+
+header .logo-link:hover~.logo>.logo-img {
+  opacity: 1;
+  left: calc(50vw - 190px);
+  transform: rotate(0);
 }
 
 .logo-link {
@@ -78,6 +93,8 @@ header {
 }
 
 .topnav {
+  display: flex;
+  flex-wrap: wrap;
   overflow: hidden;
   background-color: #333;
   border-bottom: 5px #ff6600 solid;
@@ -85,17 +102,21 @@ header {
   margin-right: auto;
 }
 
+.col {
+  flex: 20%;
+}
+
 .topnav a {
   float: left;
   display: block;
-  width: 20%;
+  width: 100%;
+  height: 100%;
   color: white;
   font-weight: normal;
   font-family: var(--ff-main);
+  font-size: 19px;
   padding: 14px 16px;
   transition: 0.3s;
-  margin-left: auto;
-  margin-right: auto;
   text-decoration: none;
 }
 
@@ -113,13 +134,59 @@ header {
   color: white;
 }
 
+.bars, .bars-display {
+  display: inline-block;
+  float: right;
+  cursor: pointer;
+  height: 100%;
+  padding: 5px 8px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.topnav .bars, .topnav .bars-display {
+  display: none;
+}
+
 .tab {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   overflow: hidden;
   background-color: #333;
   border-top: 3px var(--clr-text) solid;
 }
 
+.col-tabs {
+  flex: 1;
+}
+
 .tab button {
+  display: block;
+  width: 100%;
+  height: 100%;
   background-color: inherit;
   float: left;
   border: none;
@@ -129,7 +196,6 @@ header {
   padding: 10px;
   transition: 0.3s;
   font-size: 17px;
-  width: 33.33%;
   color: white;
 }
 
@@ -199,6 +265,7 @@ main p {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
+  max-width: 100%;
 }
 
 .section-title {
@@ -360,6 +427,7 @@ footer {
   background-color: #ddd;
   position: sticky;
   width: 100%;
+  height: 140px;
   padding: 20px;
   margin-top: 30px;
   top: 100vh;
@@ -419,8 +487,70 @@ footer {
   transition: none;
 }
 
+.bottom-container {
+  background-color: #ddd;
+}
+
+footer ul {
+  list-style-type: none;
+  text-align: left;
+  font-family: var(--ff-main);
+  position: relative;
+  float: left;
+  left: 5%;
+}
+
+footer ul a {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+footer ul a:hover {
+  color: var(--clr-text-h);
+  text-decoration: underline;
+}
+
+.search-bar {
+  width: 25%;
+  position: relative;
+  float: right;
+  right: 5%;
+  top: 7px;
+}
+
+@media screen and (max-width: 992px) {
+  .col {
+    flex: 33.33%;
+  }
+
+  .topnav a {
+    font-size: 17px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  main p {
+    padding: 0 10%;
+  }
+}
+
 @media only screen and (max-width: 600px) {
-  .topnav a, .tab button {
+  .logo-img {
+    width: 50px;
+    position: absolute;
+    top: 10px;
+    left: calc(50vw - 190px);
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+  }
+
+  header .logo-link:hover~.logo>.logo-img {
+    opacity: 1;
+  }
+
+  .tab button {
     float: none;
     width: 100%;
   }
@@ -454,5 +584,97 @@ footer {
   .modal-content {
     width: 100vw;
     height: 100%;
+  }
+
+  #caption {
+    font-size: 18px;
+  }
+
+  .close {
+    top: 0;
+    right: 10px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  footer {
+    height: 220px;
+  }
+
+  footer ul {
+    float: none;
+    left: 0;
+    padding: 3%;
+    text-align: center;
+  }
+
+  .search-bar {
+    width: 80%;
+    float: none;
+    top: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav {
+    display: block;
+    position: relative;
+  }
+
+  .tab {
+    display: block;
+  }
+
+  .topnav a:not(.active) {
+    display: none;
+  }
+
+  .topnav a {
+    width: calc(100% - 51px);
+    font-size: 19px;
+    display: block;
+  }
+
+  .topnav .bars {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .topnav .bars-display {
+    display: block;
+  }
+
+  .col {
+    width: 100%;
+    display: block;
+    flex: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+    display: block;
+  }
+
+  .topnav.responsive .bars,
+  .topnav.responsive .bars-display {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    width: 100%;
+    display: block;
+    text-align: left;
   }
 }

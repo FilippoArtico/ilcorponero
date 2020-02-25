@@ -19,19 +19,27 @@
       <a href="../index.html" class="logo-link">
         IL CORPO NERO
       </a>
-
-      <div class="topnav">
-        <h3><a href="energiairr.html">Energia Irraggiata</a></h3>
-        <h3><a href="modellocn.html" class="active">Modello di corpo nero</a></h3>
-        <h3><a href="termal.html">Termalizzazione</a></h3>
-        <h3><a href="calcoloen.html">Calcolo dell'energia</a></h3>
-        <h3><a href="casilim.html">Casi limite</a></h3>
+      <div class="logo">
+        <img src="../images/favicon.gif" alt="Corpo nero logo" class="logo-img">
       </div>
 
-      <div class="tab">
-        <button class="tablinks" onclick="openTopic(event, 'CorpoNero')" id="defaultOpen">Modello di corpo nero</button>
-        <button class="tablinks" onclick="openTopic(event, 'StefanBoltzmann')">Legge di Stefan-Boltzmann</button>
-        <button class="tablinks" onclick="openTopic(event, 'Wien')">Legge di Wien</button>
+      <div class="topnav" id="Topnav">
+        <div class="col"><a href="energiairr.html">Energia Irraggiata</a></div>
+        <div class="col"><a href="modellocn.html" class="active">Modello di corpo nero</a></div>
+        <div class="col"><a href="termal.html">Termalizzazione</a></div>
+        <div class="col"><a href="calcoloen.html">Calcolo dell'energia</a></div>
+        <div class="col"><a href="casilim.html">Casi limite</a></div>
+        <div class="bars" onclick="openCollapsed(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+
+      <div class="tab" id="tabs">
+        <div class="col-tabs"><button class="tablinks" onclick="openTopic(event, 'CorpoNero')" id="defaultOpen">Modello di corpo nero</button></div>
+        <div class="col-tabs"><button class="tablinks" onclick="openTopic(event, 'StefanBoltzmann')">Legge di Stefan-Boltzmann</button></div>
+        <div class="col-tabs"><button class="tablinks" onclick="openTopic(event, 'Wien')">Legge di Wien</button></div>
       </div>
     </header>
   </div>
@@ -105,6 +113,19 @@
   <footer>
     <div class="totop">
       <a href="#navbar"><span>&#8679;</span>Torna in alto</a>
+    </div>
+
+    <div class="bottom-container">
+      <ul>
+        <li>Link utili:</li>
+        <li><a href="../Il Corpo Nero.pdf" target="_blank">Formato PDF della pagina</a></li>
+        <li><a href="http://www.ilcielocomelaboratorio.it/" target="_blank" rel="noopener noreferrer">Il cielo come laboratorio - Nazionale</a></li>
+        <li><a href="http://www.astro.unipd.it/progettoeducativo/index.html" target="_blank" rel="noopener noreferrer">Il cielo come laboratorio - Università di Padova</a></li>
+      </ul>
+
+      <div class="search-bar">
+        <div class="gcse-search"></div>
+      </div>
     </div>
   </footer>
 

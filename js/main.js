@@ -1,5 +1,20 @@
+// Collassa topnav in icona
+function openCollapsed(y) {
+  y.classList.toggle("change");
+
+  var x = document.getElementById("Topnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
 // Pagina aperta su più tabs
-document.getElementById("defaultOpen").click();
+var element = document.getElementById("tabs");
+if (typeof(element) != 'undefined' && element != null) {
+    document.getElementById("defaultOpen").click();
+}
 
 function openTopic(evt, topicName) {
   var i, tabcontent, tablinks;
@@ -21,10 +36,12 @@ var modal = document.getElementById("Modal");
 var img = document.getElementById("image");
 var modalImg = document.getElementById("img01");
 var caption = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  caption.innerHTML = this.alt;
+if (typeof(img) != 'undefined' && img != null) {
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    caption.innerHTML = this.alt;
+  }
 }
 
 function onClick(element) {
@@ -34,7 +51,8 @@ function onClick(element) {
 }
 
 var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() {
-  modal.style.display = "none";
+if (typeof(span) != 'undefined' && span != null) {
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
 }
