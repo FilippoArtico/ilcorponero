@@ -423,6 +423,11 @@ main p {
   padding-bottom: 0;
 }
 
+.math {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
 footer {
   background-color: #ddd;
   position: sticky;
