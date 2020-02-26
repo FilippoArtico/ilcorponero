@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap");
 
 :root {
-  --ff-main: "Roboto", sans-serif;
-  --ff-second: "Lato", sans-serif;
+  --ff-main: "Lato", sans-serif;
+  --ff-second: "Roboto", sans-serif;
+  --clr-main: #ff6600;
   --clr-text: darkorange;
   --clr-text-h: saddlebrown;
 }
@@ -20,12 +21,12 @@ html, body {
 
 ::selection {
   color: white;
-  background: darkorange;
+  background: var(--clr-text);
 }
 
 ::-moz-selection {
   color: white;
-  background: darkorange;
+  background: var(--clr-text);
 }
 
 header {
@@ -50,7 +51,7 @@ header .logo-link:hover~.logo>.logo-img {
 }
 
 .logo-link {
-  font-family: var(--ff-second);
+  font-family: var(--ff-main);
   color: black;
   text-decoration: none;
   position: relative;
@@ -67,13 +68,13 @@ header .logo-link:hover~.logo>.logo-img {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background-color: #ff6600;
+  background-color: var(--clr-main);
   transform: scaleX(0);
   transition: transform 250ms ease-in;
 }
 
 .logo-link:hover {
-  color: #ff6600;
+  color: var(--clr-main);
   font-size: 36px;
   left: auto;
 }
@@ -97,7 +98,7 @@ header .logo-link:hover~.logo>.logo-img {
   flex-wrap: wrap;
   overflow: hidden;
   background-color: #333;
-  border-bottom: 5px #ff6600 solid;
+  border-bottom: 5px var(--clr-main) solid;
   margin-left: auto;
   margin-right: auto;
 }
@@ -113,7 +114,7 @@ header .logo-link:hover~.logo>.logo-img {
   height: 100%;
   color: white;
   font-weight: normal;
-  font-family: var(--ff-main);
+  font-family: var(--ff-second);
   font-size: 19px;
   padding: 14px 16px;
   transition: 0.3s;
@@ -130,7 +131,7 @@ header .logo-link:hover~.logo>.logo-img {
 }
 
 .topnav a.active {
-  background-color: #ff6600;
+  background-color: var(--clr-main);
   color: white;
 }
 
@@ -192,7 +193,7 @@ header .logo-link:hover~.logo>.logo-img {
   border: none;
   outline: none;
   cursor: pointer;
-  font-family: var(--ff-main);
+  font-family: var(--ff-second);
   padding: 10px;
   transition: 0.3s;
   font-size: 17px;
@@ -214,11 +215,11 @@ header .logo-link:hover~.logo>.logo-img {
 
 .tabcontent {
   display: none;
-  font-family: var(--ff-second);
+  font-family: var(--ff-main);
 }
 
 main {
-  font-family: var(--ff-second);
+  font-family: var(--ff-main);
   padding: 15px 35px;
 }
 
@@ -271,12 +272,12 @@ main p {
 .section-title {
   padding-top: 150px;
   padding-bottom: 10px;
-  color: #ff6600;
+  color: var(--clr-main);
 }
 
 .scroll-link {
   position: relative;
-  color: #ff6600;
+  color: var(--clr-main);
   text-decoration: none;
 }
 
@@ -287,7 +288,7 @@ main p {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background-color: #ff6600;
+  background-color: var(--clr-main);
   transform: scaleX(0);
   transition: transform 250ms ease-in;
 }
@@ -447,7 +448,7 @@ footer {
 
 .totop a {
   position: relative;
-  font-family: var(--ff-main);
+  font-family: var(--ff-second);
   font-size: 20px;
   color: black;
   text-decoration: none;
@@ -460,7 +461,7 @@ footer {
   bottom: 0;
   width: 110px;
   height: 2px;
-  background-color: #ff6600;
+  background-color: var(--clr-main);
   transform: scaleX(0);
   transition: transform 250ms ease-in;
 }
@@ -472,11 +473,11 @@ footer {
 }
 
 .totop a:hover {
-  color: #ff6600;
+  color: var(--clr-main);
 }
 
 .totop:hover span {
-  color: #ff6600;
+  color: var(--clr-main);
 }
 
 .totop a:hover::after {
@@ -499,14 +500,14 @@ footer {
 footer ul {
   list-style-type: none;
   text-align: left;
-  font-family: var(--ff-main);
+  font-family: var(--ff-second);
   position: relative;
   float: left;
   left: 5%;
 }
 
 footer ul a {
-  color: #ff6600;
+  color: var(--clr-main);
   text-decoration: none;
 }
 
